@@ -61,6 +61,11 @@ def main():
     print("Solution #1")
     print(closest_intersection(grid1, grid2))
 
+    for i in intersections(grid1, grid2):
+        g1i = grid1.index(i)
+        g2i = grid2.index(i)
+        print(g1i + g2i)
+
 
 if __name__ == "__main__":
     main()
